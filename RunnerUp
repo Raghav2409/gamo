@@ -1,0 +1,11 @@
+scores = map(int, input().split())
+lst = []
+smallest = -100
+list = sorted(scores)
+
+for i in list:
+    if i>smallest:
+        lst.append(i)
+        smallest = i
+
+print(sorted(lst, reverse=True)[1])
